@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | Aamber &amp; August</title>
+<meta name="description" content="About Aamber &amp; August, a designer clothing boutique near SBI, Punnakkadu, Kodenchery.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Jost:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("nav-js")</script>
+</head>
+<body>
+<div class="curtain" aria-hidden="true"></div>
+<div id="stitch"></div>
+<header><div class="wrap nav">
+<a class="brand" href="index.html">Aamber &amp; August</a>
+<button class="mb" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="collections.html">Collections</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="contact.html">Contact</a></li><li><button id="tt" type="button" aria-label="Switch light or dark theme">Theme</button></li></ul>
+</div></header>
+<main>
+<div class="wrap pg"><h1><span class="ln"><span>A boutique with a</span></span><span class="ln"><span>warm welcome.</span></span></h1><p>Aamber &amp; August is a designer clothing store in Kodenchery, near SBI at Punnakkadu.</p></div>
+<section><div class="wrap split rev">
+<div><h2>Clothes chosen with care.</h2><p>We stock dresses, sarees and children’s party wear, picked for fit, finish and fabric. Customers tell us we are the best in town for kids’ clothing, and that is the praise we are proudest of.</p><p>Shop in the store with experienced staff to help, or message us and we will deliver. There is ample parking right outside.</p></div>
+<div class="pic rv" style="aspect-ratio:4/5"><img src="images/interior.jpg" alt="The Aamber &amp; August boutique interior" loading="lazy"></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap"><div class="hd"><h2>What you can expect</h2></div>
+<div class="svc"><div class="rv"><h3>Quality you can feel</h3><p>Well-finished pieces in good fabric.</p></div><div class="rv"><h3>Fair prices</h3><p>Customers call it value for money, and we intend to keep it that way.</p></div><div class="rv"><h3>Knowledgeable help</h3><p>Experienced people who know the stock and the sizes.</p></div></div></div></section>
+<section class="dark"><div class="wrap"><img src="images/logo.png" alt="Aamber &amp; August logo"><h2>Come in. We’d love to dress you.</h2><p>Near SBI, Punnakkadu, Kodenchery. We close at 6:30 pm, and delivery is always an option.</p><div class="row"><a class="btn pri" href="https://www.google.com/maps/search/?api=1&query=Aamber+%26+August+Designer+Boutique+Kodenchery" target="_blank" rel="noopener">Get directions</a><a class="btn" href="tel:+919207281219">Call 092072 81219</a></div></div></section>
+</main>
+<footer><div class="wrap fg">
+<div><p class="brand">Aamber &amp; August</p><p>Designer boutique<br>Near SBI, Punnakkadu, Kodenchery<br>Kerala 673580</p></div>
+<div><p class="h">Pages</p><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<div><p class="h">Visit</p><a href="tel:+919207281219">092072 81219</a><a href="https://wa.me/919207281219" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.google.com/maps/search/?api=1&query=Aamber+%26+August+Designer+Boutique+Kodenchery" target="_blank" rel="noopener">Directions</a><p>Closes 6:30 pm</p></div>
+</div></footer>
+<script>
+(function(){var b=document.querySelector(".mb"),m=document.getElementById("menu");if(!b||!m)return;
+function set(o){m.classList.toggle("open",o);b.setAttribute("aria-expanded",o)}
+b.addEventListener("click",function(e){e.stopPropagation();set(!m.classList.contains("open"))});
+m.addEventListener("click",function(e){if(e.target.closest("a"))set(false)});
+document.addEventListener("click",function(e){if(!m.contains(e.target))set(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false)});
+})();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
